@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book store</title>
+     <style>
+      * {
+
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+header{
+    background-color: rgb(20, 1, 1);
+    padding:20px;
+    text-align: left;
+    position:sticky;
+    font-weight: bolder;
+    transition:0.3s;
+    top: 0%;
+}
+header a {
+    color:rgb(245, 63, 63);
+    margin: 0 20px ;
+    font-weight: bold;
+}
+header a:hover{
+    color: yellow ;
+}
+.banner {
+    background: url(https://franchiseindia.s3.ap-south-1.amazonaws.com/uploads/content/edu/art/5cac6b9e846ce.jpeg);
+    padding: 160px 20px;
+    text-align:justify;
+    color: red;
+    font-size:500% ;
+    font-weight:bolder ;
+    text-shadow: 3px 3px 5px cornsilk ;
+}
+.categories{
+    padding: 40px 20px;
+    text-align: center;
+    background:blanchedalmond;
+}
+.categories h2 {
+    margin-bottom: 50px;
+    font-size:xx-large;
+    color: darkcyan;
+    font-weight: bolder;
+    
+}
+.categories ul {
+    list-style:none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.categories li {
+    margin:10px ;
+    padding:15px 25px ;
+    background:rgb(255, 145, 0) ;
+    color:rgb(215, 18, 18) ;
+    border-radius:100px;
+    font-weight: bolder;
+    transition:0.3s ;
+    cursor: pointer;
+}
+.categories li:hover {
+        color: cadetblue;
+        background:#333;
+}
+
+.featured{
+ padding: 50px 50px;
+ text-align: center;
+}
+.featured h2 {
+    margin-bottom: 25px;
+    color: rgb(156, 21, 6);
+    font-weight: bolder;
+}
+.book-list{
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+.book{
+    background: #fff;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      width: 200px;
+      padding: 15px;
+      transition: 0.3s;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+.book:hover{
+        transform: scale(1.09);
+        box-shadow: #ddd;
+}
+.book img{
+    width:180px ;
+    height:250px ;
+    object-fit:cover ;
+    border: radius 8px;
+    margin: bottom 10px;
+}
+.book h3 {
+      font-size: 18px;
+      margin-bottom: 5px;
+    }
+    .book p {
+      margin: 5px 0;
+      font-size: 14px;
+      color: #555;
+    }
+    .book span {
+      font-weight: bold;
+      color: #e60000;
+    }
+
+    .contact {
+      padding: 40px 20px;
+      text-align:center;
+      background: #d5c4c4;
+    }
+    .contact h2 {
+      margin-bottom: 20px;
+      
+    }
+    input, textarea {
+      width: 300px;
+      padding: 12px;
+      margin: 10px;
+      border: 1px solid #aaa;
+      border-radius: 8px;
+      outline: none;
+      transition: 0.3s;
+    }
+    input:focus, textarea:focus {
+      border-color: #333;
+    }
+    button {
+      padding: 12px 25px;
+      background: #333;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    button:hover {
+      background: #e60000;
+    }
+
+
+    footer {
+      background: #333;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 20px;
+    }
+
+     </style>
+</head>
+<body>
+      <header>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Categories</a>
+            <a href="#">Bestsellers</a>
+            <a href="#">Contact</a>
+        </nav>
+      </header>
+      
+
+       <div class="banner">
+         Welcome to my online Book store
+        </div>
+
+         <div class="categories">
+          <h2> Book Categories </h2>
+            <ul>
+                <li>Fiction</li>
+                <li>Non-Fiction</li>
+                <li>Comics</li>
+                <li>kids</li>
+            </ul>
+         </div>
+
+        <div class="featured">
+          <h2>Featured Books</h2>
+         <div class="book-list">
+        <div class="book">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRf664ETlBQ_wUA7fydg3tIXruUiNK0HgHvEQ&s" alt="Book1">
+        <h3>The Great Story</h3>
+        <p>Book by Ved Vyasa</p>
+
+        </div>
+      <div class="book">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvxJwqXt-KznK46ZL6acPJmBj94Sh5dPvxbw&s" alt="Book2">
+        <h3>This was amazing story</h3>
+        <p>the sage Veda Vyasa</p>
+
+        </div>
+      <div class="book">
+        <img src="https://m.media-amazon.com/images/I/81DKAiGWGcL._UF1000,1000_QL80_.jpg" alt="Book3">
+        <h3>story</h3>
+        <p>Ved Vyas</p>
+        </div>
+    </div>
+  </div>
+
+<div class="Contact">
+  <h2>Contact Us</h2>
+  <form >
+    <input type="text" placeholder="Your name"><br>
+    <input type="text" placeholder=" Your email"><br>
+    <textarea placeholder="Your Message"></textarea><br>
+    <button type="submit">submit</button>
+  </form>
+</div>
+
+<footer>
+<p >2025 book store</p>
+</footer>
+
+</body>
+</html>
